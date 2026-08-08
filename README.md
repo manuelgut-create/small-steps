@@ -23,6 +23,7 @@ contradict its own text.
 | `style.css` | Everything visual; light and dark, follows the system setting |
 | `icon.svg` | Favicon — the app mark, local so nothing is fetched elsewhere |
 
+
 ## Keeping it honest
 
 If the app ever changes what it does with data, `privacy.html` has to change with
