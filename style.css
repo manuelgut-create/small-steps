@@ -125,20 +125,23 @@ button:focus-visible {
   font-size: 0.9rem;
 }
 
-/* Marks values the site owner still has to fill in. Impossible to miss. */
-.todo {
-  background: #ffe9a8;
-  color: #4a3800;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
+/*
+ * The one action the landing page asks for. Deliberately a plain link with a
+ * button's weight rather than a Google Play badge image: the badge would be a
+ * third-party asset on a page whose whole argument is that it loads none.
+ */
+.cta {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--bg);
   font-weight: 600;
+  text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  .todo {
-    background: #6b5300;
-    color: #ffeeb0;
-  }
+.cta:hover {
+  filter: brightness(1.08);
 }
 
 ul {
